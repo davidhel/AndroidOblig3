@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/redTopLeft"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/red"/>
+    
+    <TextView 
+        android:id="@+id/blueTop"
+        android:layout_width="40dp"
+        android:layout_height="260dp"
+        android:layout_alignBaseline="@+id/redTopLeft"
+        android:layout_toRightOf="@+id/redTopLeft"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@color/blue"/>
+    
+    <TextView 
+        android:id="@+id/redTopRight"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/blueTop"
+        android:layout_alignTop="@+id/redTopLeft"
+        android:layout_marginLeft="10dp"
+        android:background="@color/red"/>
+    
+    <TextView 
+        android:id="@+id/blueMid"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/redTopLeft"
+        android:layout_alignEnd="@+id/redTopRight"
+        android:layout_below="@+id/redTopLeft"
+        android:layout_centerVertical="true"
+        android:background="@color/blue"/>
+    
+    <TextView 
+        android:id="@+id/redBotLeft"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/redTopLeft"
+        android:layout_below="@id/blueMid"
+        android:background="@color/red"/>
+    
+    <TextView 
+        android:id="@+id/redBotRight"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/blueMid"
+        android:layout_toRightOf="@+id/blueTop"
+        android:background="@color/red"/>
+
+
+
+</RelativeLayout>
